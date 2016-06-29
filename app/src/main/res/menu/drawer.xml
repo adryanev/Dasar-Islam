@@ -3,23 +3,30 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/homeBeranda"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:checked="false"
+            android:title="Home"/>
+        <item
             android:id="@+id/rukunIman"
-
+            android:icon="@drawable/rukuniman"
             android:checked="false"
             android:title="Rukun Iman"/>
 
         <item
             android:id="@+id/rukunIslam"
-
+            android:icon="@drawable/rukunislam"
             android:checked="false"
             android:title="Rukun Islam"/>
         <item
             android:id="@+id/namaNabi"
             android:checked="false"
+            android:icon="@drawable/namanabi"
             android:title="Nama-nama Nabi dan Rasul"/>
         <item
             android:id="@+id/namaMalaikat"
             android:checked="false"
+            android:icon="@drawable/namamalaikat"
             android:title="Nama-nama Malaikat"/>
     </group>
 </menu>
