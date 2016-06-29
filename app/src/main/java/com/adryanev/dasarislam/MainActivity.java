@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     Toolbar toolbar;
     ActionBarDrawerToggle actionBarDrawerToggle;
     Fragment fragment;
-    RecyclerView recyclerView;
+
 
 
     @Override
@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
 
 
@@ -68,10 +69,6 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                 }
-
-
-                //FragmentManager fragmentManager = getSupportFragmentManager();
-               // fragmentManager.beginTransaction().replace(R.id.frame_container,fragment).commit();
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                 transaction.addToBackStack(null);
                 transaction.replace(R.id.frame_container,fragment);
@@ -105,12 +102,8 @@ public class MainActivity extends AppCompatActivity {
         actionBarDrawerToggle.syncState();
         View headerLayout = navigationView.getHeaderView(0);
 
-
-
-
-
-
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
