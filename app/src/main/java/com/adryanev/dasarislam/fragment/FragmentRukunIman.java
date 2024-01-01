@@ -1,17 +1,18 @@
 package com.adryanev.dasarislam.fragment;
 
-import android.app.Fragment;
+
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.adryanev.dasarislam.Adapter.RukunImanAdapter;
 import com.adryanev.dasarislam.Data;
@@ -19,12 +20,11 @@ import com.adryanev.dasarislam.DbHelper;
 import com.adryanev.dasarislam.R;
 
 import java.util.ArrayList;
-import java.util.zip.Inflater;
 
 /**
  * Created by AdryanEV on 26/06/2016.
  */
-public class FragmentRukunIman extends android.support.v4.app.Fragment {
+public class FragmentRukunIman extends Fragment {
     RecyclerView recyclerView;
     SQLiteDatabase db;
     SQLiteOpenHelper openHelper;

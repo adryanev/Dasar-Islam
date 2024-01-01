@@ -1,7 +1,5 @@
 package com.adryanev.dasarislam;
 
-import android.support.v7.widget.RecyclerView;
-
 /**
  * Created by AdryanEV on 25/06/2016.
  */
